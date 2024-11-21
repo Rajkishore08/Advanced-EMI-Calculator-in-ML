@@ -1,0 +1,174 @@
+/* General Reset for Cross-Browser Compatibility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f3f4f6;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for the App */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(253, 8, 8, 0.1);
+  border-radius: 8px;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #374151;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0px 0px 5px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+/* Insights Section */
+.insights {
+  margin-top: 24px;
+}
+
+.insights h2 {
+  color: #111827;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.insights p {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* EMI Breakdown Table */
+.table-container {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #f3f4f6;
+  color: #374151;
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Graph Section */
+.graph {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.graph img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  input, select {
+    padding: 10px;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+}
